@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <title>details</title>
+  </head>
+  <body>
+    <header class="header-wrapper bg-dark">
+      <nav class="container nav-wrapper1">
+        <div class="logo-wrapper bg-dark">
+          <div class="logo">
+            <a href="index.html"><img src="./img/logo.png" alt="" /></a>
+          </div>
+          <i class="fas fa-bars clr-light fa-3x"></i>
+        </div>
+
+        <ul class="nav-item-wrapper">
+          <li><a class="clr-light navitem" href="./index.html">Home</a></li>
+          <li><a class="clr-light navitem" href="./detail.html">About</a></li>
+          <li><a class="clr-light navitem" href="#">Contact us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="container details"></section>
+
+    <section class="details container">
+      <div class="back-to-home">
+        <a href="./index.html" class="home">home </a>
+        <a>>> heading of card</a>
+      </div>
+      <div class="dtl-card">
+        <h1 class="dtl-card-heading clr-dark">Heading of card</h1>
+        <div class="dtl-top-wrapp">
+          <div class="dtl-video-wrapp">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/3nrLc_JOF7k"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="add-half-sec"></div>
+        </div>
+        <div class="dtl-card-cnt-wrapper">
+          <div class="dtl-heading-wrapper">
+            <div class="comments-wrapper">
+              <div class="ratings clr-dark">5.0</div>
+              8 comments
+            </div>
+            <div class="left">
+              <div class="icons">
+                <i class="fab fa-whatsapp fa-1x"></i>
+                <i class="fab fa-telegram-plane fa-1x"></i>
+              </div>
+              <div class="copy">
+                <input
+                  type="text"
+                  class="copy-link"
+                  id=""
+                  value="google.com"
+                  hidden
+                />
+                <a href="#" onclick="copylink()"
+                  ><i class="far fa-copy fa-1x"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <h3 class="catogory">food,gents,clothing,leadies wear.</h3>
+          <div class="address">
+            <h3>Address :</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia,
+              ex.
+            </p>
+          </div>
+          <div class="contact-vend">
+            <a href="tel:+91 1234567890" class="btn-call">+91 1234567890</a>
+          </div>
+          <div class="cnt-dicription">
+            <div class="disciption-wrapeer">
+              <h2 class="description-heading">about heading of card</h2>
+              <p class="dicription">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+                id ut unde nostrum, asperiores architecto sunt, dicta
+                voluptatum, itaque accusantium sapiente optio natus tenetur!
+                Deleniti exercitationem magni quidem velit nesciunt ipsum error
+                at, blanditiis ab totam repudiandae pariatur quam placeat vero
+                sunt molestias iure dolor rem ea necessitatibus repellat
+                asperiores enim eaque? Libero hic voluptatem commodi.
+              </p>
+            </div>
+            <div class="add-half-sec"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container">
+      <div class="review">
+        <h3 class="reviews-heading">heading of card reviews & ratings</h3>
+        <div class="rev-wrapper">
+          <div class="review-left">
+            <div class="review-card">
+              <div class="ratings-wrapper">
+                <h2 class="name-of-reviewer">name of reviewer</h2>
+                <div class="ratings clr-dark">5.0</div>
+              </div>
+              <p class="review-content">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Eligendi illo quibusdam, accusantium dicta nisi voluptate?
+              </p>
+              <p class="time">16/06/2021 - 11:52 AM</p>
+            </div>
+            <div class="review-card">
+              <div class="ratings-wrapper">
+                <h2 class="name-of-reviewer">name of reviewer</h2>
+                <div class="ratings clr-dark">5.0</div>
+              </div>
+              <p class="review-content">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Eligendi illo quibusdam, accusantium dicta nisi voluptate?
+              </p>
+              <p class="time">16/06/2021 - 11:52 AM</p>
+            </div>
+            <div class="review-card">
+              <div class="ratings-wrapper">
+                <h2 class="name-of-reviewer">name of reviewer</h2>
+                <div class="ratings clr-dark">5.0</div>
+              </div>
+              <p class="review-content">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Eligendi illo quibusdam, accusantium dicta nisi voluptate?
+              </p>
+              <p class="time">16/06/2021 - 11:52 AM</p>
+            </div>
+            <div class="review-card">
+              <div class="ratings-wrapper">
+                <h2 class="name-of-reviewer">name of reviewer</h2>
+                <div class="ratings clr-dark">5.0</div>
+              </div>
+              <p class="review-content">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Eligendi illo quibusdam, accusantium dicta nisi voluptate?
+              </p>
+              <p class="time">16/06/2021 - 11:52 AM</p>
+            </div>
+          </div>
+          <div class="review-right">
+            <div class="add-half-sec"></div>
+            <div class="add-half-sec"></div>
+          </div>
+        </div>
+        <div class="btn-wrap">
+          <button class="see-details-btn">see all reviews</button>
+        </div>
+      </div>
+    </section>
+    <section class="container">
+      <div class="make-review">
+        <h2 class="make-review-heading">
+          Give ratings if you like service of name of compony
+        </h2>
+        <h2 class="info">
+          Your all information will be private unless you make them to show.
+        </h2>
+        <div class="form-wrapper">
+          <form action="">
+            <div class="form-grp">
+              <label for="name">your name<span class="clr-red">*</span></label>
+              <input type="text" id="name" required />
+              <p class="alert">
+                No one can see your name if don't display it in public
+              </p>
+              <div class="check-wrapper">
+                <input type="checkbox" id="display" /><label for="display"
+                  >display your name in public</label
+                >
+              </div>
+            </div>
+            <div class="form-grp">
+              <label for="dicrip"
+                >Write description <span class="clr-red">*</span></label
+              >
+              <textarea id="discrip"></textarea>
+            </div>
+            <div class="btn-wrapper">
+              <input type="submit" value="Submit" class="btn-submit" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script>
+      $(".fa-bars").on("click", function (e) {
+        if (e.target.classList.contains("fa-bars")) {
+          $(".header-wrapper").css("height", "250px");
+          $(".nav-item-wrapper").css("transform", "translateY(0)");
+          $(".logo-wrapper .fas").removeClass("fa-bars").addClass("fa-times");
+        } else {
+          $(".header-wrapper").css("height", "62px");
+          $(".nav-item-wrapper").css("transform", "translateY(-150%)");
+          $(".logo-wrapper .fas").removeClass("fa-times").addClass("fa-bars");
+        }
+      });
+      async function copylink() {
+        let text = document.querySelector(".copy-link").value;
+        await navigator.clipboard.writeText(text);
+        alert(
+          "Ad Link Is Copied Successfully! Now You Can Share With Others..."
+        );
+      }
+      var show = false;
+      $(".see-details-btn").on("click", function () {
+        if (show === false) {
+          $(".review-left").css("height", "auto");
+          $(".review-left").css("overflow-y", "visible");
+          $(".see-details-btn").text("Hide all comments");
+          console.log(show);
+          show = true;
+          console.log(show);
+        } else if (show == true) {
+          $(".review-left").css("height", "450px");
+          $(".review-left").css("overflow-y", "hidden");
+          $(".see-details-btn").text("See all comments");
+          show = false;
+        }
+      });
+    </script>
+  </body>
+</html>
