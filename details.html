@@ -164,49 +164,47 @@
               <p class="time">16/06/2021 - 11:52 AM</p>
             </div>
           </div>
+          <div class="btn-wrap see-btn">
+            <button class="see-details-btn">see all reviews</button>
+          </div>
           <div class="review-right">
             <div class="add-half-sec"></div>
             <div class="add-half-sec"></div>
           </div>
         </div>
-        <div class="btn-wrap">
+        <div class="btn-wrap see-btn-out">
           <button class="see-details-btn">see all reviews</button>
         </div>
       </div>
     </section>
     <section class="container">
       <div class="make-review">
-        <h2 class="make-review-heading">
-          Give ratings if you like service of name of compony
-        </h2>
-        <h2 class="info">
-          Your all information will be private unless you make them to show.
-        </h2>
-        <div class="form-wrapper">
-          <form action="">
+        <h4 class="make-review-heading">
+         write review about name of compony
+        </h4>
+        <form action="" class="form-wrapper">
+          <div class="up-div">
             <div class="form-grp">
-              <label for="name">your name<span class="clr-red">*</span></label>
-              <input type="text" id="name" required />
-              <p class="alert">
-                No one can see your name if don't display it in public
-              </p>
-              <div class="check-wrapper">
-                <input type="checkbox" id="display" /><label for="display"
-                  >display your name in public</label
-                >
-              </div>
+              <i class="far fa-user form-icon"></i>
+              <input type="text" name="name" class="input-review" placeholder="Your Name *">
             </div>
             <div class="form-grp">
-              <label for="dicrip"
-                >Write description <span class="clr-red">*</span></label
-              >
-              <textarea id="discrip"></textarea>
+              <i class="far fa-envelope form-icon"></i>
+              <input type="email" name="email" class="input-review" placeholder="Emali Address *">
             </div>
-            <div class="btn-wrapper">
-              <input type="submit" value="Submit" class="btn-submit" />
+            <div class="form-grp">
+              <i class="fas fa-phone-alt form-icon"></i>
+              <input type="number" name="number" maxlength="10" class="input-review" placeholder="Mobile Number *">
             </div>
-          </form>
-        </div>
+          </div>
+          <div class="form-grp text">
+            <i class="fas fa-pencil-alt form-icon"></i>
+            <textarea name="comment" class="textarea" placeholder="Your Review *"></textarea>
+          </div>
+          <div class="btn-wrap">
+            <button class="btn-submit">Submit</button>
+          </div>
+        </form>
       </div>
     </section>
     <script>
