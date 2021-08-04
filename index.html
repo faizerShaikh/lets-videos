@@ -1,448 +1,565 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <title>Lets Videos</title>
+  </head>
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./css/style.css" />
-  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-    crossorigin="anonymous"></script>
-  <title>Lets Videos</title>
-</head>
+  <body class="bg-light">
+    <header class="header-wrapper bg-dark">
+      <nav class="container nav-wrapper1">
+        <div class="logo-wrapper bg-dark">
+          <div class="logo">
+            <a href="./index.html"><img src="./img/logo.png" alt="" /></a>
+          </div>
+          <i class="fas fa-bars clr-light fa-3x"></i>
+        </div>
 
-<body class="bg-light">
-  <header class="header-wrapper bg-dark">
-    <nav class="container nav-wrapper1">
-      <div class="logo-wrapper bg-dark">
-        <div class="logo">
-          <a href="./index.html"><img src="./img/logo.png" alt="" /></a>
-        </div>
-        <i class="fas fa-bars clr-light fa-3x"></i>
+        <ul class="nav-item-wrapper">
+          <li><a class="clr-light navitem" href="./home.html">Home</a></li>
+          <li><a class="clr-light navitem" href="./details.html">About</a></li>
+          <li><a class="clr-light navitem" href="#">Contact us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="body">
+      <div class="content-wrapper">
+        <h2 class="content-heading clr-light">
+          Find your need among 159 businesses!
+        </h2>
+        <form action="" class="search-wrapper">
+          <div class="city-wrpper">
+            <i class="fas fa-map-marker-alt map"></i>
+            <input type="text" list="city" class="city-ip" placeholder="Pune" />
+            <datalist id="city">
+              <option value="Mumbai">Mumbai</option>
+              <option value="Pune">Pune</option>
+              <option value="Nagpur">Nagpur</option>
+              <option value="Thane">Thane</option>
+              <option value="Pimpry, pune">Pimpry, pune</option>
+              <option value="Nashik">Nashik</option>
+              <option value="Solapur">Solapur</option>
+              <option value="Aurangabad">Aurangabad</option>
+              <option value="Ahmadnagar">Ahmadnagar</option>
+              <option value="Kolhapur">Kolhapur</option>
+            </datalist>
+          </div>
+          <input type="text" placeholder="Search Here..." class="search" />
+          <div class="icon">
+            <button style="outline: none; border: none; background: none">
+              <i class="fas fa-search clr-red fa-2x"></i>
+            </button>
+          </div>
+          <input type="text" placeholder="Search By Area..." class="area" />
+        </form>
       </div>
+    </section>
+    <section class="bg-odd-light">
+      <div class="cat-section container">
+        <div class="add-section"></div>
+        <h1 class="cat-head">Search by categories</h1>
+        <div class="cat-wrapper">
+          <div class="cat-card">
+            <a href="#" class="ic-wrapper">
+              <i class="fas fa-truck-moving clr-red bg-odd-light"></i>
+              <h2 class="cat-heading">one</h2>
+            </a>
+          </div>
+          <div class="cat-card">
+            <a href="#" class="ic-wrapper">
+              <i class="fas fa-truck-moving clr-red bg-odd-light"></i>
+              <h2 class="cat-heading">one</h2>
+            </a>
+          </div>
+          <div class="cat-card">
+            <a href="#" class="ic-wrapper">
+              <i class="fas fa-truck-moving clr-red bg-odd-light"></i>
+              <h2 class="cat-heading">one</h2>
+            </a>
+          </div>
+          <div class="cat-card">
+            <a href="#" class="ic-wrapper">
+              <i class="fas fa-truck-moving clr-red bg-odd-light"></i>
+              <h2 class="cat-heading">one</h2>
+            </a>
+          </div>
+          <div class="cat-card">
+            <a href="#" class="ic-wrapper">
+              <i class="fas fa-truck-moving clr-red bg-odd-light"></i>
+              <h2 class="cat-heading">one</h2>
+            </a>
+          </div>
+          <div class="cat-card">
+            <a href="#" class="ic-wrapper">
+              <i class="fas fa-truck-moving clr-red bg-odd-light"></i>
+              <h2 class="cat-heading">one</h2>
+            </a>
+          </div>
+          <div class="cat-card">
+            <a href="#" class="ic-wrapper">
+              <i class="fas fa-truck-moving clr-red bg-odd-light"></i>
+              <h2 class="cat-heading">one</h2>
+            </a>
+          </div>
+          <div class="cat-card">
+            <a href="#" class="ic-wrapper">
+              <i class="fas fa-truck-moving clr-red bg-odd-light"></i>
+              <h2 class="cat-heading">one</h2>
+            </a>
+          </div>
+          <div class="cat-card">
+            <a href="#" class="ic-wrapper">
+              <i class="fas fa-truck-moving clr-red bg-odd-light"></i>
+              <h2 class="cat-heading">one</h2>
+            </a>
+          </div>
+          <div class="cat-card">
+            <a href="#" class="ic-wrapper">
+              <i class="fas fa-truck-moving clr-red bg-odd-light"></i>
+              <h2 class="cat-heading">one</h2>
+            </a>
+          </div>
+          <div class="cat-card">
+            <a href="#" class="ic-wrapper">
+              <i class="fas fa-truck-moving clr-red bg-odd-light"></i>
+              <h2 class="cat-heading">one</h2>
+            </a>
+          </div>
+          <div class="cat-card">
+            <a href="#" class="ic-wrapper">
+              <i class="fas fa-truck-moving clr-red bg-odd-light"></i>
+              <h2 class="cat-heading">one</h2>
+            </a>
+          </div>
+          <div class="cat-card">
+            <a href="#" class="ic-wrapper">
+              <i class="fas fa-truck-moving clr-red bg-odd-light"></i>
+              <h2 class="cat-heading">one</h2>
+            </a>
+          </div>
+          <div class="cat-card">
+            <a href="#" class="ic-wrapper">
+              <i class="fas fa-truck-moving clr-red bg-odd-light"></i>
+              <h2 class="cat-heading">one</h2>
+            </a>
+          </div>
+          <div class="cat-card">
+            <a href="#" class="ic-wrapper">
+              <i class="fas fa-truck-moving clr-red bg-odd-light"></i>
+              <h2 class="cat-heading">one</h2>
+            </a>
+          </div>
+          <div class="cat-card">
+            <a href="#" class="ic-wrapper">
+              <i class="fas fa-truck-moving clr-red bg-odd-light"></i>
+              <h2 class="cat-heading">one</h2>
+            </a>
+          </div>
+          <div class="cat-card">
+            <a href="#" class="ic-wrapper">
+              <i class="fas fa-truck-moving clr-red bg-odd-light"></i>
+              <h2 class="cat-heading">one</h2>
+            </a>
+          </div>
+          <div class="cat-card">
+            <a href="#" class="ic-wrapper">
+              <i class="fas fa-truck-moving clr-red bg-odd-light"></i>
+              <h2 class="cat-heading">one</h2>
+            </a>
+          </div>
+          <div class="cat-card">
+            <a href="#" class="ic-wrapper">
+              <i class="fas fa-truck-moving clr-red bg-odd-light"></i>
+              <h2 class="cat-heading">one</h2>
+            </a>
+          </div>
+          <div class="cat-card">
+            <a href="#" class="ic-wrapper">
+              <i class="fas fa-truck-moving clr-red bg-odd-light"></i>
+              <h2 class="cat-heading">one</h2>
+            </a>
+          </div>
+        </div>
+        <div class="add-section"></div>
+        <div class="sort-btn-wrapper">
+          <button class="btn active-btn">random results</button>
+          <button class="btn inactive-btn">newly added</button>
+          <button class="btn inactive-btn">top reviewed</button>
+        </div>
+      </div>
+    </section>
 
-      <ul class="nav-item-wrapper">
-        <li><a class="clr-light navitem" href="./home.html">Home</a></li>
-        <li><a class="clr-light navitem" href="./details.html">About</a></li>
-        <li><a class="clr-light navitem" href="#">Contact us</a></li>
-      </ul>
-    </nav>
-  </header>
-  <section class="body">
-    <div class="content-wrapper">
-      <h2 class="content-heading clr-light">
-        Find your need among 159 businesses!
-      </h2>
-      <form action="" class="search-wrapper">
-        <div class="city-wrpper">
-          <i class="fas fa-map-marker-alt map"></i>
-          <input type="text" list="city" class="city-ip" placeholder="Pune"/>
-          <datalist id="city">
-            <option value="mumbai">mumbai</option>
-            <option value="pune">pune</option>
-            <option value="nagpur">nagpur</option>
-            <option value="thane">thane</option>
-            <option value="pimpry, pune">pimpry, pune</option>
-            <option value="nashik">nashik</option>
-            <option value="solapur">solapur</option>
-            <option value="aurangabad">aurangabad</option>
-            <option value="ahmadnagar">ahmadnagar</option>
-            <option value="kolhapur">kolhapur</option>
-          </datalist>
-        </div>
-        <input type="text" placeholder="Search Here..." class="search" />
-        <div class="icon">
-          <button style="outline: none; border: none; background: none">
-            <i class="fas fa-search clr-red fa-2x"></i>
-          </button>
-        </div>
-      </form>
-    </div>
-  </section>
-  <section class="bg-odd-light">
-    <div class="cat-section container">
-      <div class="add-section"></div>
-      <h1 class="cat-head">Search by categories</h1>
-      <div class="cat-wrapper">
-        <div class="cat-card">
-          <a href="#" class="ic-wrapper">
-            <i class="fas fa-truck-moving clr-red bg-odd-light"></i>
-            <h2 class="cat-heading">one</h2>
-          </a>
-        </div>
-        <div class="cat-card">
-          <a href="#" class="ic-wrapper">
-            <i class="fas fa-truck-moving clr-red bg-odd-light"></i>
-            <h2 class="cat-heading">one</h2>
-          </a>
-        </div>
-        <div class="cat-card">
-          <a href="#" class="ic-wrapper">
-            <i class="fas fa-truck-moving clr-red bg-odd-light"></i>
-            <h2 class="cat-heading">one</h2>
-          </a>
-        </div>
-        <div class="cat-card">
-          <a href="#" class="ic-wrapper">
-            <i class="fas fa-truck-moving clr-red bg-odd-light"></i>
-            <h2 class="cat-heading">one</h2>
-          </a>
-        </div>
-        <div class="cat-card">
-          <a href="#" class="ic-wrapper">
-            <i class="fas fa-truck-moving clr-red bg-odd-light"></i>
-            <h2 class="cat-heading">one</h2>
-          </a>
-        </div>
-        <div class="cat-card">
-          <a href="#" class="ic-wrapper">
-            <i class="fas fa-truck-moving clr-red bg-odd-light"></i>
-            <h2 class="cat-heading">one</h2>
-          </a>
-        </div>
-        <div class="cat-card">
-          <a href="#" class="ic-wrapper">
-            <i class="fas fa-truck-moving clr-red bg-odd-light"></i>
-            <h2 class="cat-heading">one</h2>
-          </a>
-        </div>
-        <div class="cat-card">
-          <a href="#" class="ic-wrapper">
-            <i class="fas fa-truck-moving clr-red bg-odd-light"></i>
-            <h2 class="cat-heading">one</h2>
-          </a>
-        </div>
-        <div class="cat-card">
-          <a href="#" class="ic-wrapper">
-            <i class="fas fa-truck-moving clr-red bg-odd-light"></i>
-            <h2 class="cat-heading">one</h2>
-          </a>
-        </div>
-        <div class="cat-card">
-          <a href="#" class="ic-wrapper">
-            <i class="fas fa-truck-moving clr-red bg-odd-light"></i>
-            <h2 class="cat-heading">one</h2>
-          </a>
-        </div>
-        <div class="cat-card">
-          <a href="#" class="ic-wrapper">
-            <i class="fas fa-truck-moving clr-red bg-odd-light"></i>
-            <h2 class="cat-heading">one</h2>
-          </a>
-        </div>
-        <div class="cat-card">
-          <a href="#" class="ic-wrapper">
-            <i class="fas fa-truck-moving clr-red bg-odd-light"></i>
-            <h2 class="cat-heading">one</h2>
-          </a>
-        </div>
-        <div class="cat-card">
-          <a href="#" class="ic-wrapper">
-            <i class="fas fa-truck-moving clr-red bg-odd-light"></i>
-            <h2 class="cat-heading">one</h2>
-          </a>
-        </div>
-        <div class="cat-card">
-          <a href="#" class="ic-wrapper">
-            <i class="fas fa-truck-moving clr-red bg-odd-light"></i>
-            <h2 class="cat-heading">one</h2>
-          </a>
-        </div>
-        <div class="cat-card">
-          <a href="#" class="ic-wrapper">
-            <i class="fas fa-truck-moving clr-red bg-odd-light"></i>
-            <h2 class="cat-heading">one</h2>
-          </a>
-        </div>
-        <div class="cat-card">
-          <a href="#" class="ic-wrapper">
-            <i class="fas fa-truck-moving clr-red bg-odd-light"></i>
-            <h2 class="cat-heading">one</h2>
-          </a>
-        </div>
-        <div class="cat-card">
-          <a href="#" class="ic-wrapper">
-            <i class="fas fa-truck-moving clr-red bg-odd-light"></i>
-            <h2 class="cat-heading">one</h2>
-          </a>
-        </div>
-        <div class="cat-card">
-          <a href="#" class="ic-wrapper">
-            <i class="fas fa-truck-moving clr-red bg-odd-light"></i>
-            <h2 class="cat-heading">one</h2>
-          </a>
-        </div>
-        <div class="cat-card">
-          <a href="#" class="ic-wrapper">
-            <i class="fas fa-truck-moving clr-red bg-odd-light"></i>
-            <h2 class="cat-heading">one</h2>
-          </a>
-        </div>
-        <div class="cat-card">
-          <a href="#" class="ic-wrapper">
-            <i class="fas fa-truck-moving clr-red bg-odd-light"></i>
-            <h2 class="cat-heading">one</h2>
-          </a>
-        </div>
-      </div>
-      <div class="sort-btn-wrapper">
-        <button class="btn">random results</button>
-        <button class="btn">newly added</button>
-        <button class="btn">top reviewed</button>
-      </div>
-      <div class="add-section"></div>
-    </div>
-  </section>
+    <section class="bg-red in-shadow">
+      <div class="main-body container">
+        <div class="card bg-light">
+          <div class="video-wrapp">
+            <iframe
+              height="150"
+              width="284"
+              src="https://www.youtube.com/embed/HgvIox6ehkM?modestbranding=1&autoplay=1&mute=1&loop=1&controls=0&showinfo=0&fs=0&title=0"
+            >
+            </iframe>
+          </div>
 
+          <div class="card-cnt-wrapper">
+            <div class="isopen-wrapper clr-green">
+              <i class="fas fa-circle"></i>
+              <p class="status">open</p>
+            </div>
+            <div class="heading-wrapper">
+              <a href="">
+                <h2 class="card-heading clr-dark">name of businesses</h2>
+              </a>
+              <div class="copy">
+                <input type="text" class="copy-link" value="" hidden />
+                <a href="#" onclick="copylink()"
+                  ><i class="far fa-copy fa-2x"></i
+                ></a>
+              </div>
+            </div>
+            <div class="comments-wrapper">
+              <div class="ratings clr-dark">5.0</div>
+              8 Reviews
+            </div>
+            <h3 class="catogory">food,gents,clothing,leadies wear.</h3>
+            <div class="contact-vend">
+              <a href="tel:+91 1234567890" class="btn-call"> +91 1234567890 </a>
+              <div class="icons">
+                <a href="https://api.whatsapp.com/send?phone=91" target="_blank"
+                  ><i class="fab fa-whatsapp fa-2x"></i
+                ></a>
+                <a href="" target="_blank">
+                  <i class="fab fa-telegram-plane fa-2x"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
 
-  <section class="container main-body">
-    <div class="card bg-odd-light">
-      <div class="video-wrapp">
-        <iframe height="150" width="284"
-          src="https://www.youtube.com/embed/HgvIox6ehkM?modestbranding=1&autoplay=1&mute=1&loop=1&controls=0&showinfo=0&fs=0&title=0">
-        </iframe>
-      </div>
+        <div class="card bg-light">
+          <div class="video-wrapp">
+            <iframe
+              height="150"
+              width="284"
+              src="https://www.youtube.com/embed/HgvIox6ehkM?modestbranding=1&autoplay=1&mute=1&loop=1&controls=0&showinfo=0&fs=0&title=0"
+            >
+            </iframe>
+          </div>
 
-      <div class="card-cnt-wrapper">
-        <div class="isopen-wrapper clr-green">
-          <i class="fas fa-circle"></i>
-          <p class="status">open</p>
-        </div>
-        <div class="heading-wrapper">
-          <a href="">
-            <h2 class="card-heading clr-dark">name of businesses</h2>
-          </a>
-          <div class="copy">
-            <input type="text" class="copy-link" value="" hidden />
-            <a href="#" onclick="copylink()"><i class="far fa-copy fa-2x"></i></a>
+          <div class="card-cnt-wrapper">
+            <div class="isopen-wrapper clr-green">
+              <i class="fas fa-circle"></i>
+              <p class="status">open</p>
+            </div>
+            <div class="heading-wrapper">
+              <a href="">
+                <h2 class="card-heading clr-dark">name of businesses</h2>
+              </a>
+              <div class="copy">
+                <input type="text" class="copy-link" value="" hidden />
+                <a href="#" onclick="copylink()"
+                  ><i class="far fa-copy fa-2x"></i
+                ></a>
+              </div>
+            </div>
+            <div class="comments-wrapper">
+              <div class="ratings clr-dark">5.0</div>
+              8 Reviews
+            </div>
+            <h3 class="catogory">food,gents,clothing,leadies wear.</h3>
+            <div class="contact-vend">
+              <a href="tel:+91 1234567890" class="btn-call"> +91 1234567890 </a>
+              <div class="icons">
+                <a href="https://api.whatsapp.com/send?phone=91" target="_blank"
+                  ><i class="fab fa-whatsapp fa-2x"></i
+                ></a>
+                <a href="" target="_blank">
+                  <i class="fab fa-telegram-plane fa-2x"></i
+                ></a>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="comments-wrapper">
-          <div class="ratings clr-dark">5.0</div>
-          8 Reviews
-        </div>
-        <h3 class="catogory">food,gents,clothing,leadies wear.</h3>
-        <div class="contact-vend">
-          <a href="tel:+91 1234567890" class="btn-call"> +91 1234567890 </a>
-          <div class="icons">
-            <a href="https://api.whatsapp.com/send?phone=91" target="_blank"><i class="fab fa-whatsapp fa-2x"></i></a>
-            <a href="" target="_blank">
-              <i class="fab fa-telegram-plane fa-2x"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="card bg-odd-light">
-      <div class="video-wrapp">
-        <iframe height="150" width="284"
-          src="https://www.youtube.com/embed/HgvIox6ehkM?modestbranding=1&autoplay=1&mute=1&loop=1&controls=0&showinfo=0&fs=0&title=0">
-        </iframe>
-      </div>
-      <div class="card-cnt-wrapper">
-        <div class="isopen-wrapper clr-green">
-          <i class="fas fa-circle"></i>
-          <p class="status">closed</p>
-        </div>
-        <div class="heading-wrapper">
-          <a href="#">
-            <h2 class="card-heading clr-dark">name of businesses</h2>
-          </a>
-          <div class="copy">
-            <input type="text" class="copy-link" value="" hidden />
-            <a href="#" onclick="copylink()"><i class="far fa-copy fa-2x"></i></a>
+        <div class="card bg-light">
+          <div class="video-wrapp">
+            <iframe
+              height="150"
+              width="284"
+              src="https://www.youtube.com/embed/HgvIox6ehkM?modestbranding=1&autoplay=1&mute=1&loop=1&controls=0&showinfo=0&fs=0&title=0"
+            >
+            </iframe>
+          </div>
+
+          <div class="card-cnt-wrapper">
+            <div class="isopen-wrapper clr-green">
+              <i class="fas fa-circle"></i>
+              <p class="status">closed</p>
+            </div>
+            <div class="heading-wrapper">
+              <a href="">
+                <h2 class="card-heading clr-dark">name of businesses</h2>
+              </a>
+              <div class="copy">
+                <input type="text" class="copy-link" value="" hidden />
+                <a href="#" onclick="copylink()"
+                  ><i class="far fa-copy fa-2x"></i
+                ></a>
+              </div>
+            </div>
+            <div class="comments-wrapper">
+              <div class="ratings clr-dark">5.0</div>
+              8 Reviews
+            </div>
+            <h3 class="catogory">food,gents,clothing,leadies wear.</h3>
+            <div class="contact-vend">
+              <a href="tel:+91 1234567890" class="btn-call"> +91 1234567890 </a>
+              <div class="icons">
+                <a href="https://api.whatsapp.com/send?phone=91" target="_blank"
+                  ><i class="fab fa-whatsapp fa-2x"></i
+                ></a>
+                <a href="" target="_blank">
+                  <i class="fab fa-telegram-plane fa-2x"></i
+                ></a>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="comments-wrapper">
-          <div class="ratings clr-dark">5.0</div>
-          8 Reviews
+
+        <div class="card bg-light">
+          <div class="video-wrapp">
+            <iframe
+              height="150"
+              width="284"
+              src="https://www.youtube.com/embed/HgvIox6ehkM?modestbranding=1&autoplay=1&mute=1&loop=1&controls=0&showinfo=0&fs=0&title=0"
+            >
+            </iframe>
+          </div>
+
+          <div class="card-cnt-wrapper">
+            <div class="isopen-wrapper clr-green">
+              <i class="fas fa-circle"></i>
+              <p class="status">open</p>
+            </div>
+            <div class="heading-wrapper">
+              <a href="">
+                <h2 class="card-heading clr-dark">name of businesses</h2>
+              </a>
+              <div class="copy">
+                <input type="text" class="copy-link" value="" hidden />
+                <a href="#" onclick="copylink()"
+                  ><i class="far fa-copy fa-2x"></i
+                ></a>
+              </div>
+            </div>
+            <div class="comments-wrapper">
+              <div class="ratings clr-dark">5.0</div>
+              8 Reviews
+            </div>
+            <h3 class="catogory">food,gents,clothing,leadies wear.</h3>
+            <div class="contact-vend">
+              <a href="tel:+91 1234567890" class="btn-call"> +91 1234567890 </a>
+              <div class="icons">
+                <a href="https://api.whatsapp.com/send?phone=91" target="_blank"
+                  ><i class="fab fa-whatsapp fa-2x"></i
+                ></a>
+                <a href="" target="_blank">
+                  <i class="fab fa-telegram-plane fa-2x"></i
+                ></a>
+              </div>
+            </div>
+          </div>
         </div>
-        <h3 class="catogory">food,gents,clothing,leadies wear.</h3>
-        <div class="contact-vend">
-          <a href="tel:+91 1234567890" class="btn-call"> +91 1234567890 </a>
-          <div class="icons">
-            <a href="https://api.whatsapp.com/send?phone=91" target="_blank"><i class="fab fa-whatsapp fa-2x"></i></a>
-            <a href="" target="_blank">
-              <i class="fab fa-telegram-plane fa-2x"></i></a>
+
+        <div class="card bg-light">
+          <div class="video-wrapp">
+            <iframe
+              height="150"
+              width="284"
+              src="https://www.youtube.com/embed/HgvIox6ehkM?modestbranding=1&autoplay=1&mute=1&loop=1&controls=0&showinfo=0&fs=0&title=0"
+            >
+            </iframe>
+          </div>
+
+          <div class="card-cnt-wrapper">
+            <div class="isopen-wrapper clr-green">
+              <i class="fas fa-circle"></i>
+              <p class="status">open</p>
+            </div>
+            <div class="heading-wrapper">
+              <a href="">
+                <h2 class="card-heading clr-dark">name of businesses</h2>
+              </a>
+              <div class="copy">
+                <input type="text" class="copy-link" value="" hidden />
+                <a href="#" onclick="copylink()"
+                  ><i class="far fa-copy fa-2x"></i
+                ></a>
+              </div>
+            </div>
+            <div class="comments-wrapper">
+              <div class="ratings clr-dark">5.0</div>
+              8 Reviews
+            </div>
+            <h3 class="catogory">food,gents,clothing,leadies wear.</h3>
+            <div class="contact-vend">
+              <a href="tel:+91 1234567890" class="btn-call"> +91 1234567890 </a>
+              <div class="icons">
+                <a href="https://api.whatsapp.com/send?phone=91" target="_blank"
+                  ><i class="fab fa-whatsapp fa-2x"></i
+                ></a>
+                <a href="" target="_blank">
+                  <i class="fab fa-telegram-plane fa-2x"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card bg-light">
+          <div class="video-wrapp">
+            <iframe
+              height="150"
+              width="284"
+              src="https://www.youtube.com/embed/HgvIox6ehkM?modestbranding=1&autoplay=1&mute=1&loop=1&controls=0&showinfo=0&fs=0&title=0"
+            >
+            </iframe>
+          </div>
+
+          <div class="card-cnt-wrapper">
+            <div class="isopen-wrapper clr-green">
+              <i class="fas fa-circle"></i>
+              <p class="status">open</p>
+            </div>
+            <div class="heading-wrapper">
+              <a href="">
+                <h2 class="card-heading clr-dark">name of businesses</h2>
+              </a>
+              <div class="copy">
+                <input type="text" class="copy-link" value="" hidden />
+                <a href="#" onclick="copylink()"
+                  ><i class="far fa-copy fa-2x"></i
+                ></a>
+              </div>
+            </div>
+            <div class="comments-wrapper">
+              <div class="ratings clr-dark">5.0</div>
+              8 Reviews
+            </div>
+            <h3 class="catogory">food,gents,clothing,leadies wear.</h3>
+            <div class="contact-vend">
+              <a href="tel:+91 1234567890" class="btn-call"> +91 1234567890 </a>
+              <div class="icons">
+                <a href="https://api.whatsapp.com/send?phone=91" target="_blank"
+                  ><i class="fab fa-whatsapp fa-2x"></i
+                ></a>
+                <a href="" target="_blank">
+                  <i class="fab fa-telegram-plane fa-2x"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card bg-light">
+          <div class="video-wrapp">
+            <iframe
+              height="150"
+              width="284"
+              src="https://www.youtube.com/embed/HgvIox6ehkM?modestbranding=1&autoplay=1&mute=1&loop=1&controls=0&showinfo=0&fs=0&title=0"
+            >
+            </iframe>
+          </div>
+
+          <div class="card-cnt-wrapper">
+            <div class="isopen-wrapper clr-green">
+              <i class="fas fa-circle"></i>
+              <p class="status">open</p>
+            </div>
+            <div class="heading-wrapper">
+              <a href="">
+                <h2 class="card-heading clr-dark">name of businesses</h2>
+              </a>
+              <div class="copy">
+                <input type="text" class="copy-link" value="" hidden />
+                <a href="#" onclick="copylink()"
+                  ><i class="far fa-copy fa-2x"></i
+                ></a>
+              </div>
+            </div>
+            <div class="comments-wrapper">
+              <div class="ratings clr-dark">5.0</div>
+              8 Reviews
+            </div>
+            <h3 class="catogory">food,gents,clothing,leadies wear.</h3>
+            <div class="contact-vend">
+              <a href="tel:+91 1234567890" class="btn-call"> +91 1234567890 </a>
+              <div class="icons">
+                <a href="https://api.whatsapp.com/send?phone=91" target="_blank"
+                  ><i class="fab fa-whatsapp fa-2x"></i
+                ></a>
+                <a href="" target="_blank">
+                  <i class="fab fa-telegram-plane fa-2x"></i
+                ></a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+    </section>
+    <div class="bg-odd-light last-div">
+      <div class="container add-section"></div>
     </div>
-    <div class="card bg-odd-light">
-      <div class="video-wrapp">
-        <iframe height="150" width="284"
-          src="https://www.youtube.com/embed/HgvIox6ehkM?modestbranding=1&autoplay=1&mute=1&loop=1&controls=0&showinfo=0&fs=0&title=0">
-        </iframe>
-      </div>
-      <div class="card-cnt-wrapper">
-        <div class="isopen-wrapper clr-green">
-          <i class="fas fa-circle"></i>
-          <p class="status">open</p>
-        </div>
-        <div class="heading-wrapper">
-          <a href="">
-            <h2 class="card-heading clr-dark">name of businesses</h2>
-          </a>
-          <div class="copy">
-            <input type="text" class="copy-link" value="" hidden />
-            <a href="#" onclick="copylink()"><i class="far fa-copy fa-2x"></i></a>
-          </div>
-        </div>
-        <div class="comments-wrapper">
-          <div class="ratings clr-dark">5.0</div>
-          8 Reviews
-        </div>
-        <h3 class="catogory">food,gents,clothing,leadies wear.</h3>
-        <div class="contact-vend">
-          <a href="tel:+91 1234567890" class="btn-call"> +91 1234567890 </a>
-          <div class="icons">
-            <a href="https://api.whatsapp.com/send?phone=91" target="_blank"><i class="fab fa-whatsapp fa-2x"></i></a>
-            <a href="" target="_blank">
-              <i class="fab fa-telegram-plane fa-2x"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="card bg-odd-light">
-      <div class="video-wrapp">
-        <iframe height="150" width="284"
-          src="https://www.youtube.com/embed/HgvIox6ehkM?modestbranding=1&autoplay=1&mute=1&loop=1&controls=0&showinfo=0&fs=0&title=0">
-        </iframe>
-      </div>
-      <div class="card-cnt-wrapper">
-        <div class="isopen-wrapper clr-green">
-          <i class="fas fa-circle"></i>
-          <p class="status">open</p>
-        </div>
-        <div class="heading-wrapper">
-          <a href="">
-            <h2 class="card-heading clr-dark">name of businesses</h2>
-          </a>
-          <div class="copy">
-            <input type="text" class="copy-link" value="" hidden />
-            <a href="#" onclick="copylink()"><i class="far fa-copy fa-2x"></i></a>
-          </div>
-        </div>
-        <div class="comments-wrapper">
-          <div class="ratings clr-dark">5.0</div>
-          8 Reviews
-        </div>
-        <h3 class="catogory">food,gents,clothing,leadies wear.</h3>
-        <div class="contact-vend">
-          <a href="tel:+91 1234567890" class="btn-call"> +91 1234567890 </a>
-          <div class="icons">
-            <a href="https://api.whatsapp.com/send?phone=91" target="_blank"><i class="fab fa-whatsapp fa-2x"></i></a>
-            <a href="" target="_blank">
-              <i class="fab fa-telegram-plane fa-2x"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="card bg-odd-light">
-      <div class="video-wrapp">
-        <iframe height="150" width="284"
-          src="https://www.youtube.com/embed/HgvIox6ehkM?modestbranding=1&autoplay=1&mute=1&loop=1&controls=0&showinfo=0&fs=0&title=0">
-        </iframe>
-      </div>
-      <div class="card-cnt-wrapper">
-        <div class="isopen-wrapper clr-green">
-          <i class="fas fa-circle"></i>
-          <p class="status">open</p>
-        </div>
-        <div class="heading-wrapper">
-          <a href="">
-            <h2 class="card-heading clr-dark">name of businesses</h2>
-          </a>
-          <div class="copy">
-            <input type="text" class="copy-link" value="" hidden />
-            <a href="#" onclick="copylink()"><i class="far fa-copy fa-2x"></i></a>
-          </div>
-        </div>
-        <div class="comments-wrapper">
-          <div class="ratings clr-dark">5.0</div>
-          8 Reviews
-        </div>
-        <h3 class="catogory">food,gents,clothing,leadies wear.</h3>
-        <div class="contact-vend">
-          <a href="tel:+91 1234567890" class="btn-call"> +91 1234567890 </a>
-          <div class="icons">
-            <a href="https://api.whatsapp.com/send?phone=91" target="_blank"><i class="fab fa-whatsapp fa-2x"></i></a>
-            <a href="" target="_blank">
-              <i class="fab fa-telegram-plane fa-2x"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="card bg-odd-light">
-      <div class="video-wrapp">
-        <iframe height="150" width="284"
-          src="https://www.youtube.com/embed/HgvIox6ehkM?modestbranding=1&autoplay=1&mute=1&loop=1&controls=0&showinfo=0&fs=0&title=0">
-        </iframe>
-      </div>
-      <div class="card-cnt-wrapper">
-        <div class="isopen-wrapper clr-green">
-          <i class="fas fa-circle"></i>
-          <p class="status">open</p>
-        </div>
-        <div class="heading-wrapper">
-          <a href="">
-            <h2 class="card-heading clr-dark">name of businesses</h2>
-          </a>
-          <div class="copy">
-            <input type="text" class="copy-link" value="" hidden />
-            <a href="#" onclick="copylink()"><i class="far fa-copy fa-2x"></i></a>
-          </div>
-        </div>
-        <div class="comments-wrapper">
-          <div class="ratings clr-dark">5.0</div>
-          8 Reviews
-        </div>
-        <h3 class="catogory">food,gents,clothing,leadies wear.</h3>
-        <div class="contact-vend">
-          <a href="tel:+91 1234567890" class="btn-call"> +91 1234567890 </a>
-          <div class="icons">
-            <a href="https://api.whatsapp.com/send?phone=91" target="_blank"><i class="fab fa-whatsapp fa-2x"></i></a>
-            <a href="" target="_blank">
-              <i class="fab fa-telegram-plane fa-2x"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <div class="bg-odd-light last-div">
-    <div class="container add-section"></div>
-  </div>
-  <script>
-    $(".fa-bars").on("click", function (e) {
-      if (e.target.classList.contains("fa-bars")) {
-        $(".header-wrapper").css("height", "250px");
-        $(".nav-item-wrapper").css("transform", "translateY(0)");
-        $(".logo-wrapper .fas").removeClass("fa-bars").addClass("fa-times");
-      } else {
-        $(".header-wrapper").css("height", "62px");
-        $(".nav-item-wrapper").css("transform", "translateY(-150%)");
-        $(".logo-wrapper .fas").removeClass("fa-times").addClass("fa-bars");
+    <script>
+      $(".fa-bars").on("click", function (e) {
+        if (e.target.classList.contains("fa-bars")) {
+          $(".nav-item-wrapper").css("transform", "translateX(50%)");
+          $(".logo-wrapper .fas").removeClass("fa-bars").addClass("fa-times");
+        } else {
+          $(".nav-item-wrapper").css("transform", "translateX(300%)");
+          $(".logo-wrapper .fas").removeClass("fa-times").addClass("fa-bars");
+        }
+      });
+      async function copylink() {
+        let text = document.querySelector(".copy-link").value;
+        await navigator.clipboard.writeText(text);
+        alert(
+          "Ad Link Is Copied Successfully! Now You Can Share With Others..."
+        );
       }
-    });
-    async function copylink() {
-      let text = document.querySelector(".copy-link").value;
-      await navigator.clipboard.writeText(text);
-      alert(
-        "Ad Link Is Copied Successfully! Now You Can Share With Others..."
-      );
-    }
 
-    $(".status").each(function (index, element) {
-      if ($(element).text() === "open") {
-        $(element).parent().removeClass("clr-red").addClass("clr-green")
-      } else if ($(element).text() === "closed") {
-        $(element).parent().removeClass("clr-green").addClass("clr-red")
-      }
-    });
-  </script>
-</body>
+      $(".status").each(function (index, element) {
+        if ($(element).text() === "open") {
+          $(element).parent().removeClass("clr-red").addClass("clr-green");
+        } else if ($(element).text() === "closed") {
+          $(element).parent().removeClass("clr-green").addClass("clr-red");
+        }
+      });
 
+      $(window).on("click", function (e) {
+        if (e.target.classList.contains("search")) {
+          $(".area").css("top", "100%");
+          $(".area").show();
+        } else {
+          $(".area").css("top", "0%");
+          $(".area").hide();
+        }
+      });
+    </script>
+  </body>
 </html>
