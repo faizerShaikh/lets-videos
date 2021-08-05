@@ -32,6 +32,7 @@
         <ul class="nav-item-wrapper">
           <li><a class="clr-light navitem" href="./index.html">Home</a></li>
           <li><a class="clr-light navitem" href="./detail.html">About</a></li>
+          <li><a class="clr-light navitem" href="./price.html">Pricing</a></li>
           <li><a class="clr-light navitem" href="#">Contact us</a></li>
         </ul>
       </nav>
@@ -127,62 +128,61 @@
       <div class="review container bg-light">
         <h3 class="reviews-heading">heading of card reviews & ratings</h3>
         <div class="rev-wrapper">
-          <div class="review-left">
-            <div class="review-card">
-              <div class="ratings-wrapper">
-                <h2 class="name-of-reviewer">name of reviewer</h2>
-                <div class="ratings clr-dark">5.0</div>
+          <div class="review-left-out">
+            <div class="review-left">
+              <div class="review-card">
+                <div class="ratings-wrapper">
+                  <h2 class="name-of-reviewer">name of reviewer</h2>
+                  <div class="ratings clr-dark">5.0</div>
+                </div>
+                <p class="review-content">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Eligendi illo quibusdam, accusantium dicta nisi voluptate?
+                </p>
+                <p class="time">16/06/2021 - 11:52 AM</p>
               </div>
-              <p class="review-content">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Eligendi illo quibusdam, accusantium dicta nisi voluptate?
-              </p>
-              <p class="time">16/06/2021 - 11:52 AM</p>
-            </div>
-            <div class="review-card">
-              <div class="ratings-wrapper">
-                <h2 class="name-of-reviewer">name of reviewer</h2>
-                <div class="ratings clr-dark">5.0</div>
+              <div class="review-card">
+                <div class="ratings-wrapper">
+                  <h2 class="name-of-reviewer">name of reviewer</h2>
+                  <div class="ratings clr-dark">5.0</div>
+                </div>
+                <p class="review-content">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Eligendi illo quibusdam, accusantium dicta nisi voluptate?
+                </p>
+                <p class="time">16/06/2021 - 11:52 AM</p>
               </div>
-              <p class="review-content">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Eligendi illo quibusdam, accusantium dicta nisi voluptate?
-              </p>
-              <p class="time">16/06/2021 - 11:52 AM</p>
-            </div>
-            <div class="review-card">
-              <div class="ratings-wrapper">
-                <h2 class="name-of-reviewer">name of reviewer</h2>
-                <div class="ratings clr-dark">5.0</div>
+              <div class="review-card">
+                <div class="ratings-wrapper">
+                  <h2 class="name-of-reviewer">name of reviewer</h2>
+                  <div class="ratings clr-dark">5.0</div>
+                </div>
+                <p class="review-content">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Eligendi illo quibusdam, accusantium dicta nisi voluptate?
+                </p>
+                <p class="time">16/06/2021 - 11:52 AM</p>
               </div>
-              <p class="review-content">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Eligendi illo quibusdam, accusantium dicta nisi voluptate?
-              </p>
-              <p class="time">16/06/2021 - 11:52 AM</p>
-            </div>
-            <div class="review-card">
-              <div class="ratings-wrapper">
-                <h2 class="name-of-reviewer">name of reviewer</h2>
-                <div class="ratings clr-dark">5.0</div>
+              <div class="review-card">
+                <div class="ratings-wrapper">
+                  <h2 class="name-of-reviewer">name of reviewer</h2>
+                  <div class="ratings clr-dark">5.0</div>
+                </div>
+                <p class="review-content">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Eligendi illo quibusdam, accusantium dicta nisi voluptate?
+                </p>
+                <p class="time">16/06/2021 - 11:52 AM</p>
               </div>
-              <p class="review-content">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Eligendi illo quibusdam, accusantium dicta nisi voluptate?
-              </p>
-              <p class="time">16/06/2021 - 11:52 AM</p>
             </div>
-          </div>
-          <div class="btn-wrap see-btn">
-            <button class="see-details-btn">see all reviews</button>
+            <div class="btn-wrap see-btn-out">
+              <button class="see-details-btn">see all reviews</button>
+            </div>
           </div>
           <div class="review-right">
             <div class="add-half-sec"></div>
             <div class="add-half-sec"></div>
           </div>
-        </div>
-        <div class="btn-wrap see-btn-out">
-          <button class="see-details-btn">see all reviews</button>
         </div>
       </div>
     </section>
@@ -276,10 +276,10 @@
     <script>
       $(".fa-bars").on("click", function (e) {
         if (e.target.classList.contains("fa-bars")) {
-          $(".nav-item-wrapper").css("transform", "translateX(100%)");
+          $(".nav-item-wrapper").css("transform", "translateX(0%)");
           $(".logo-wrapper .fas").removeClass("fa-bars").addClass("fa-times");
         } else {
-          $(".nav-item-wrapper").css("transform", "translateX(300%)");
+          $(".nav-item-wrapper").css("transform", "translateX(110%)");
           $(".logo-wrapper .fas").removeClass("fa-times").addClass("fa-bars");
         }
       });
