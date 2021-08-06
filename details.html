@@ -12,11 +12,109 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
     <script
       src="https://code.jquery.com/jquery-3.6.0.js"
       integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
       crossorigin="anonymous"
     ></script>
+    <style>
+      body {
+        font-size: 62.5%;
+      }
+      .bg-clr-light {
+        background: #f5f5f5;
+      }
+      .bg-clr-red {
+        background: #d22b2b;
+      }
+      .bg-clr-dark {
+        background: #000;
+      }
+      .clr-light {
+        color: #f5f5f5;
+      }
+      .clr-red {
+        color: #d22b2b;
+      }
+      .clr-dark {
+        color: #000;
+      }
+      .form-icon {
+        font-size: 1.1rem;
+        position: absolute;
+        z-index: 99;
+        top: 35%;
+        left: 9%;
+        color: rgb(124, 124, 124);
+        transform: translate(-50%, -50%);
+      }
+      .form-control {
+        padding-left: 40px;
+      }
+      .form-control:focus {
+        background: #f5f5f5;
+      }
+      .textarea {
+        width: 100%;
+        resize: none;
+        min-height: 150px !important;
+      }
+      .col-md-12 .form-icon {
+        top: 17%;
+        left: 2.5%;
+      }
+      .btn {
+        transition: all 0.3s ease-in;
+      }
+      .btn:hover {
+        transform: scale(1.1);
+      }
+      .far {
+        cursor: pointer;
+      }
+      a {
+        border: none !important;
+      }
+      @media (max-width: 991px) {
+        .form-icon {
+          left: 14%;
+        }
+      }
+      @media (max-width: 768px) {
+        .form-icon {
+          left: 15%;
+        }
+        .container {
+          width: 90% !important;
+        }
+        .col-md-12 .form-icon {
+          left: 5%;
+        }
+      }
+      @media (max-width: 767px) {
+        .form-icon {
+          left: 7%;
+          top: 35%;
+        }
+        .col-md-12 .form-icon {
+          left: 7%;
+        }
+      }
+      @media (max-width: 500px) {
+        .form-icon {
+          left: 10%;
+        }
+        .col-md-12 .form-icon {
+          left: 10%;
+        }
+      }
+    </style>
     <title>details</title>
   </head>
   <body>
@@ -30,10 +128,16 @@
         </div>
 
         <ul class="nav-item-wrapper">
-          <li><a class="clr-light navitem" href="./index.html">Home</a></li>
-          <li><a class="clr-light navitem" href="./detail.html">About</a></li>
-          <li><a class="clr-light navitem" href="./price.html">Pricing</a></li>
-          <li><a class="clr-light navitem" href="#">Contact us</a></li>
+          <li>
+            <a class="clr-light navitem border-0" href="./index.html">Home</a>
+          </li>
+          <li>
+            <a class="clr-light navitem border-0" href="./detail.html">About</a>
+          </li>
+          <li>
+            <a class="clr-light navitem border-0" href="./price.html">Plans</a>
+          </li>
+          <li><a class="clr-light navitem border-0" href="#">Contact us</a></li>
         </ul>
       </nav>
     </header>
@@ -103,6 +207,7 @@
               </div>
             </div>
             <div class="contact-vend">
+              <a href="tel:+91 1234567890" class="btn-call">+91 1234567890</a>
               <a href="tel:+91 1234567890" class="btn-call">+91 1234567890</a>
             </div>
             <div class="cnt-dicription">
@@ -186,7 +291,7 @@
         </div>
       </div>
     </section>
-    <section class="bg-odd-light" style="padding: 5em 0">
+    <!-- <section class="bg-odd-light" style="padding: 5em 0">
       <div class="container make-review">
         <h4 class="make-review-heading">write review about name of compony</h4>
         <form
@@ -272,7 +377,119 @@
           </div>
         </form>
       </div>
+    </section> -->
+    <section class="bg-clr-light" style="padding: 10em 0 5em 0">
+      <div class="container rounded border border-dark p-4">
+        <h3 class="h3 border-bottom border-dark">
+          Write Review About Name Of Compony
+        </h3>
+        <form action="" id="review-form">
+          <div class="row mt-3">
+            <div class="col-md-6 mx-auto">
+              <h6 class="text-center" style="font-size: 1.1rem">
+                How Much Do You Like Service Of
+                <strong> Name Of Company!</strong>
+              </h6>
+              <div class="d-flex justify-content-center mt-4 give-star-ratings">
+                <i
+                  class="far fa-star clr-red mx-2 fs-4 mb-4"
+                  data-ratings="1"
+                ></i>
+                <i
+                  class="far fa-star clr-red mx-2 fs-4 mb-4"
+                  data-ratings="2"
+                ></i>
+                <i
+                  class="far fa-star clr-red mx-2 fs-4 mb-4"
+                  data-ratings="3"
+                ></i>
+                <i
+                  class="far fa-star clr-red mx-2 fs-4 mb-4"
+                  data-ratings="4"
+                ></i>
+                <i
+                  class="far fa-star clr-red mx-2 fs-4 mb-4"
+                  data-ratings="5"
+                ></i>
+                <input
+                  type="hidden"
+                  name="ratings"
+                  class="star-rating-value"
+                  value="0"
+                  required
+                />
+              </div>
+              <h3
+                class="clr-red show-stars-msg fs-5"
+                style="text-align: center; display: none"
+              >
+                Please Give stars!
+              </h3>
+            </div>
+          </div>
+          <div class="row mt-4 mt-4">
+            <div class="col-md-4 mb-3 position-relative">
+              <i class="far fa-user form-icon"></i>
+              <input
+                type="text"
+                class="form-control bg-clr-light"
+                id="exampleFormControlInput1"
+                placeholder="Your Name *"
+              />
+            </div>
+            <div class="col-md-4 mb-3 position-relative">
+              <i class="far fa-envelope form-icon"></i>
+              <input
+                type="email"
+                class="form-control bg-clr-light"
+                id="exampleFormControlInput1"
+                placeholder="Your Name *"
+              />
+              <div id="emailHelp" class="form-text mx-2">
+                Example : Userexample@Example.Com
+              </div>
+            </div>
+            <div class="col-md-4 mb-3 position-relative">
+              <i class="fas fa-phone-alt form-icon"></i>
+              <input
+                type="tel"
+                class="form-control bg-clr-light"
+                id="exampleFormControlInput1"
+                placeholder="Moblie Number *"
+                aria-describedby="numberHelp"
+              />
+              <div id="numberHelp" class="form-text mx-2">
+                Mobile No Must Be 10 Digits.
+              </div>
+            </div>
+          </div>
+          <div class="row mt-2 position-relative">
+            <div class="col-md-12 mb-3">
+              <i class="fas fa-pencil-alt form-icon"></i>
+              <textarea
+                class="form-control bg-clr-light textarea"
+                placeholder="Your Review *"
+                id="exampleFormControlTextarea1"
+              ></textarea>
+            </div>
+          </div>
+          <div class="d-flex justofy-content-center">
+            <input
+              class="btn bg-clr-red rounded-pill mx-auto px-4"
+              type="submit"
+              value="Submit"
+              style="font-weight: 700"
+            />
+          </div>
+        </form>
+      </div>
     </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
     <script>
       $(".fa-bars").on("click", function (e) {
         if (e.target.classList.contains("fa-bars")) {

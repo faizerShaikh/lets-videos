@@ -18,12 +18,13 @@ li {
 }
 a {
   text-decoration: none;
+  border-bottom: none !important;
 }
 :root {
-  --prime-clr: #f5f5f5;
+  --prime-clr: #fbffff;
   --sec-clr: #000;
   --ter-clr: #d22b2b;
-  --four-clr: #f5f5f5;
+  --four-clr: #fbffff;
 }
 /* utility classes */
 .clr-light {
@@ -43,16 +44,16 @@ a {
   background: var(--sec-clr);
 }
 .bg-red {
-  background: var(--ter-clr);
+  background: #fbffff;
 }
 .clr-green {
   color: green;
 }
 .bg-odd-light {
-  background: var(--four-clr);
+  background: #fbffff;
 }
 .in-shadow {
-  box-shadow: inset 0px 10px 20px rgba(0, 0, 0, 0.486);
+  box-shadow: inset 10px 10px 20px rgba(0, 0, 0, 0.2);
 }
 .container {
   max-width: 1200px;
@@ -97,6 +98,7 @@ a {
   font-size: 1rem;
   position: relative;
   transition: all 0.4s ease-in;
+  border-bottom: none !important;
 }
 .navitem:hover {
   color: var(--ter-clr);
@@ -228,7 +230,6 @@ a {
   padding: 10px;
   display: block;
   width: 400px;
-  margin-top: 10px;
   left: 23.7%;
   z-index: -1;
   display: none;
@@ -354,10 +355,10 @@ a {
 }
 .contact-vend {
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   align-content: center;
   align-items: center;
-  margin-top: 1.5em;
+  margin: 20px 0px;
   color: var(--sec-clr);
 }
 .icons i {
@@ -377,6 +378,7 @@ a {
   padding: 10px 15px;
   background: var(--ter-clr);
   font-weight: 600;
+  margin-right: 20px;
   border-radius: 10rem;
   color: var(--sec-clr);
   font-family: "Poppins", sans-serif;
@@ -508,18 +510,21 @@ a {
   flex-direction: row;
   padding: 1em;
 }
+.ytp-chrome-top .ytp-show-cards-title {
+  display: none;
+}
 .add-half-sec {
-  width: 40%;
+  width: 350px;
   border: 1px solid rgb(90, 90, 90);
   margin-left: 1em;
-  height: 200px;
+  height: 350px;
 }
 .dtl-video-wrapp {
-  width: 60%;
+  width: 65%;
 }
 .dtl-video-wrapp iframe {
   width: 100%;
-  height: 300px;
+  height: 350px;
   margin: auto;
 }
 .dtl-card-cnt-wrapper {
@@ -563,16 +568,14 @@ a {
   width: 60%;
 }
 .description-heading {
-  margin-bottom: 5px;
+  margin: 10px 0;
   font-size: 1.2rem;
 }
 .cnt-dicription {
-  padding: 10px;
+  padding-top: 15px;
   border-top: 1px solid rgb(90, 90, 90);
   display: flex;
   justify-content: space-between;
-  align-content: center;
-  align-items: center;
 }
 
 /* review section styling */

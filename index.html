@@ -33,7 +33,7 @@
         <ul class="nav-item-wrapper">
           <li><a class="clr-light navitem" href="./home.html">Home</a></li>
           <li><a class="clr-light navitem" href="./details.html">About</a></li>
-          <li><a class="clr-light navitem" href="./price.html">Pricing</a></li>
+          <li><a class="clr-light navitem" href="./price.html">Plans</a></li>
           <li><a class="clr-light navitem" href="#">Contact us</a></li>
         </ul>
       </nav>
@@ -523,35 +523,6 @@
         </div>
       </div>
     </section>
-    <section class="bg-odd-light" style="padding: 10em 0 5em 0">
-      <div class="container pricing-wrapper">
-        <h1 class="pricing-heading clr-red">Our premium Ad Plans</h1>
-        <h3 class="price-tagline">Your Growth Our risponsibility.</h3>
-        <p>grow your businesses with our premium advertisement plans.</p>
-        <div class="price-card-wrpper">
-      <div class="price-card">
-        <h1 class="title">1 month</h1>
-        <h3 class="price">&#x20b9 99/-</h3>
-        <button type="submit" class="btn-ad">Create Your Ad</button>
-      </div>
-      <div class="price-card">
-        <h1 class="title">3 month</h1>
-        <h3 class="price">&#x20b9 399/-</h3>
-        <button type="submit" class="btn-ad">Create Your Ad</button>
-      </div>
-      <div class="price-card">
-        <h1 class="title">6 month</h1>
-        <h3 class="price">&#x20b9 799/-</h3>
-        <button type="submit" class="btn-ad">Create Your Ad</button>
-      </div>
-      <div class="price-card">
-        <h1 class="title">12 month</h1>
-        <h3 class="price">&#x20b9 1499/-</h3>
-        <button type="submit" class="btn-ad">Create Your Ad</button>
-      </div>
-    </div>
-  </div>
-  </section>
     <div class="bg-odd-light last-div">
       <div class="container add-section"></div>
     </div>
@@ -582,7 +553,10 @@
       });
 
       $(window).on("click", function (e) {
-        if (e.target.classList.contains("search") || e.target.classList.contains("area")) {
+        if (
+          e.target.classList.contains("search") ||
+          e.target.classList.contains("area")
+        ) {
           $(".area").css("top", "100%");
           $(".area").show();
         } else {
