@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/base.css" />
+    <title>bootstrap forms</title>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark"
+      style="background: #000 !important"
+    >
+      <div class="container">
+        <a href="../" class="navbar-brand bg-light p-2 rounded"
+          ><img src="./img/logo.png" width="110" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-md-auto">
+            <li class="nav-item">
+              <a class="nav-link text-light mx-4 fs-6" href="./home.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light mx-4 fs-6" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light mx-4 fs-6" href="./forms.html"
+                >Details</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light mx-4 fs-6" href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="d-flex wallpaper justify-content-center align-items-center">
+      <div class="text-center p-2" style="z-index: 2 !important">
+        <h1 class="h1 fs-1 clr-light" style="font-weight: 500">
+          Find your need among 159 <br />
+          businesses!
+        </h1>
+        <form
+          action=""
+          class="d-flex justify-content-center align-content-center mt-4"
+        >
+          <div class="city-wrapper position-relative">
+            <i class="fas fa-map-marker-alt map fs-5"></i>
+            <input type="text" list="city" class="city-ip" placeholder="Pune" />
+            <datalist id="city">
+              <option value="Mumbai">Mumbai</option>
+              <option value="Pune">Pune</option>
+              <option value="Nagpur">Nagpur</option>
+              <option value="Thane">Thane</option>
+              <option value="Pimpry, pune">Pimpry, pune</option>
+              <option value="Nashik">Nashik</option>
+              <option value="Solapur">Solapur</option>
+              <option value="Aurangabad">Aurangabad</option>
+              <option value="Ahmadnagar">Ahmadnagar</option>
+              <option value="Kolhapur">Kolhapur</option>
+            </datalist>
+          </div>
+          <div class="d-flex align-content-center flex-column search-wrapper">
+            <input type="text" class="serach" placeholder="Search Here..." />
+            <input type="text" class="area" placeholder="Search By Area..." />
+          </div>
+          <div class="search-btn-wrapper">
+            <button class="btn-serach bg-clr-light">
+              <i class="fas fa-search clr-red fa-2x"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="bg-clr-light pt-5 pb-5 border-bottom border-dark">
+      <div class="container add-full-section border border-dark"></div>
+      <h2 class="h2 fs-4 text-center mt-3 mb-3">serach by catogaries</h2>
+      <div
+        class="
+          container
+          mt-5
+          mb-5
+          pt-4
+          cat-wrapper
+          border border-dark
+          rounded
+          d-flex
+          justify-content-start
+          align-items-centern
+          p-3
+          flex-wrap
+        "
+      >
+        <a
+          href="#"
+          class="
+            cat-card
+            m-3
+            mt-4
+            border border-2
+            p-2
+            rounded
+            position-relative
+          "
+        >
+          <div class="text-center">
+            <i
+              class="fas fa-truck-moving clr-red bg-clr-light card-icon p-3"
+            ></i>
+            <h2
+              class="h2 fs-5 clr-dark text-truncate"
+              style="margin-top: 1.7rem"
+            >
+              heading
+            </h2>
+          </div>
+        </a>
+        <a
+          href="#"
+          class="
+            cat-card
+            m-3
+            mt-4
+            border border-2
+            p-2
+            rounded
+            position-relative
+          "
+        >
+          <div class="text-center">
+            <i
+              class="fas fa-truck-moving clr-red bg-clr-light card-icon p-3"
+            ></i>
+            <h2
+              class="h2 fs-5 clr-dark text-truncate"
+              style="margin-top: 1.7rem"
+            >
+              heading
+            </h2>
+          </div>
+        </a>
+        <a
+          href="#"
+          class="
+            cat-card
+            m-3
+            mt-4
+            border border-2
+            p-2
+            rounded
+            position-relative
+          "
+        >
+          <div class="text-center">
+            <i
+              class="fas fa-truck-moving clr-red bg-clr-light card-icon p-3"
+            ></i>
+            <h2
+              class="h2 fs-5 clr-dark text-truncate"
+              style="margin-top: 1.7rem"
+            >
+              heading
+            </h2>
+          </div>
+        </a>
+        <a
+          href="#"
+          class="
+            cat-card
+            m-3
+            mt-4
+            border border-2
+            p-2
+            rounded
+            position-relative
+          "
+        >
+          <div class="text-center">
+            <i
+              class="fas fa-truck-moving clr-red bg-clr-light card-icon p-3"
+            ></i>
+            <h2
+              class="h2 fs-5 clr-dark text-truncate"
+              style="margin-top: 1.7rem"
+            >
+              heading
+            </h2>
+          </div>
+        </a>
+        <a
+          href="#"
+          class="
+            cat-card
+            m-3
+            mt-4
+            border border-2
+            p-2
+            rounded
+            position-relative
+          "
+        >
+          <div class="text-center">
+            <i
+              class="fas fa-truck-moving clr-red bg-clr-light card-icon p-3"
+            ></i>
+            <h2
+              class="h2 fs-5 clr-dark text-truncate"
+              style="margin-top: 1.7rem"
+            >
+              heading
+            </h2>
+          </div>
+        </a>
+        <a
+          href="#"
+          class="
+            cat-card
+            m-3
+            mt-4
+            border border-2
+            p-2
+            rounded
+            position-relative
+          "
+        >
+          <div class="text-center">
+            <i
+              class="fas fa-truck-moving clr-red bg-clr-light card-icon p-3"
+            ></i>
+            <h2
+              class="h2 fs-5 clr-dark text-truncate"
+              style="margin-top: 1.7rem"
+            >
+              heading
+            </h2>
+          </div>
+        </a>
+        <a
+          href="#"
+          class="
+            cat-card
+            m-3
+            mt-4
+            border border-2
+            p-2
+            rounded
+            position-relative
+          "
+        >
+          <div class="text-center">
+            <i
+              class="fas fa-truck-moving clr-red bg-clr-light card-icon p-3"
+            ></i>
+            <h2
+              class="h2 fs-5 clr-dark text-truncate"
+              style="margin-top: 1.7rem"
+            >
+              heading
+            </h2>
+          </div>
+        </a>
+        <a
+          href="#"
+          class="
+            cat-card
+            m-3
+            mt-4
+            border border-2
+            p-2
+            rounded
+            position-relative
+          "
+        >
+          <div class="text-center">
+            <i
+              class="fas fa-truck-moving clr-red bg-clr-light card-icon p-3"
+            ></i>
+            <h2
+              class="h2 fs-5 clr-dark text-truncate"
+              style="margin-top: 1.7rem"
+            >
+              heading
+            </h2>
+          </div>
+        </a>
+        <a
+          href="#"
+          class="
+            cat-card
+            m-3
+            mt-4
+            border border-2
+            p-2
+            rounded
+            position-relative
+          "
+        >
+          <div class="text-center">
+            <i
+              class="fas fa-truck-moving clr-red bg-clr-light card-icon p-3"
+            ></i>
+            <h2
+              class="h2 fs-5 clr-dark text-truncate"
+              style="margin-top: 1.7rem"
+            >
+              heading
+            </h2>
+          </div>
+        </a>
+        <a
+          href="#"
+          class="
+            cat-card
+            m-3
+            mt-4
+            border border-2
+            p-2
+            rounded
+            position-relative
+          "
+        >
+          <div class="text-center">
+            <i
+              class="fas fa-truck-moving clr-red bg-clr-light card-icon p-3"
+            ></i>
+            <h2
+              class="h2 fs-5 clr-dark text-truncate"
+              style="margin-top: 1.7rem"
+            >
+              heading
+            </h2>
+          </div>
+        </a>
+        <a
+          href="#"
+          class="
+            cat-card
+            m-3
+            mt-4
+            border border-2
+            p-2
+            rounded
+            position-relative
+          "
+        >
+          <div class="text-center">
+            <i
+              class="fas fa-truck-moving clr-red bg-clr-light card-icon p-3"
+            ></i>
+            <h2
+              class="h2 fs-5 clr-dark text-truncate"
+              style="margin-top: 1.7rem"
+            >
+              heading
+            </h2>
+          </div>
+        </a>
+        <a
+          href="#"
+          class="
+            cat-card
+            m-3
+            mt-4
+            border border-2
+            p-2
+            rounded
+            position-relative
+          "
+        >
+          <div class="text-center">
+            <i
+              class="fas fa-truck-moving clr-red bg-clr-light card-icon p-3"
+            ></i>
+            <h2
+              class="h2 fs-5 clr-dark text-truncate"
+              style="margin-top: 1.7rem"
+            >
+              heading
+            </h2>
+          </div>
+        </a>
+        <a
+          href="#"
+          class="
+            cat-card
+            m-3
+            mt-4
+            border border-2
+            p-2
+            rounded
+            position-relative
+          "
+        >
+          <div class="text-center">
+            <i
+              class="fas fa-truck-moving clr-red bg-clr-light card-icon p-3"
+            ></i>
+            <h2
+              class="h2 fs-5 clr-dark text-truncate"
+              style="margin-top: 1.7rem"
+            >
+              heading
+            </h2>
+          </div>
+        </a>
+        <a
+          href="#"
+          class="
+            cat-card
+            m-3
+            mt-4
+            border border-2
+            p-2
+            rounded
+            position-relative
+          "
+        >
+          <div class="text-center">
+            <i
+              class="fas fa-truck-moving clr-red bg-clr-light card-icon p-3"
+            ></i>
+            <h2
+              class="h2 fs-5 clr-dark text-truncate"
+              style="margin-top: 1.7rem"
+            >
+              heading
+            </h2>
+          </div>
+        </a>
+        <a
+          href="#"
+          class="
+            cat-card
+            m-3
+            mt-4
+            border border-2
+            p-2
+            rounded
+            position-relative
+          "
+        >
+          <div class="text-center">
+            <i
+              class="fas fa-truck-moving clr-red bg-clr-light card-icon p-3"
+            ></i>
+            <h2
+              class="h2 fs-5 clr-dark text-truncate"
+              style="margin-top: 1.7rem"
+            >
+              heading
+            </h2>
+          </div>
+        </a>
+        <a
+          href="#"
+          class="
+            cat-card
+            m-3
+            mt-4
+            border border-2
+            p-2
+            rounded
+            position-relative
+          "
+        >
+          <div class="text-center">
+            <i
+              class="fas fa-truck-moving clr-red bg-clr-light card-icon p-3"
+            ></i>
+            <h2
+              class="h2 fs-5 clr-dark text-truncate"
+              style="margin-top: 1.7rem"
+            >
+              heading
+            </h2>
+          </div>
+        </a>
+        <a
+          href="#"
+          class="
+            cat-card
+            m-3
+            mt-4
+            border border-2
+            p-2
+            rounded
+            position-relative
+          "
+        >
+          <div class="text-center">
+            <i
+              class="fas fa-truck-moving clr-red bg-clr-light card-icon p-3"
+            ></i>
+            <h2
+              class="h2 fs-5 clr-dark text-truncate"
+              style="margin-top: 1.7rem"
+            >
+              heading
+            </h2>
+          </div>
+        </a>
+        <a
+          href="#"
+          class="
+            cat-card
+            m-3
+            mt-4
+            border border-2
+            p-2
+            rounded
+            position-relative
+          "
+        >
+          <div class="text-center">
+            <i
+              class="fas fa-truck-moving clr-red bg-clr-light card-icon p-3"
+            ></i>
+            <h2
+              class="h2 fs-5 clr-dark text-truncate"
+              style="margin-top: 1.7rem"
+            >
+              heading
+            </h2>
+          </div>
+        </a>
+        <a
+          href="#"
+          class="
+            cat-card
+            m-3
+            mt-4
+            border border-2
+            p-2
+            rounded
+            position-relative
+          "
+        >
+          <div class="text-center">
+            <i
+              class="fas fa-truck-moving clr-red bg-clr-light card-icon p-3"
+            ></i>
+            <h2
+              class="h2 fs-5 clr-dark text-truncate"
+              style="margin-top: 1.7rem"
+            >
+              heading
+            </h2>
+          </div>
+        </a>
+        <a
+          href="#"
+          class="
+            cat-card
+            m-3
+            mt-4
+            border border-2
+            p-2
+            rounded
+            position-relative
+          "
+        >
+          <div class="text-center">
+            <i
+              class="fas fa-truck-moving clr-red bg-clr-light card-icon p-3"
+            ></i>
+            <h2
+              class="h2 fs-5 clr-dark text-truncate"
+              style="margin-top: 1.7rem"
+            >
+              heading
+            </h2>
+          </div>
+        </a>
+        <a
+          href="#"
+          class="
+            cat-card
+            m-3
+            mt-4
+            border border-2
+            p-2
+            rounded
+            position-relative
+          "
+        >
+          <div class="text-center">
+            <i
+              class="fas fa-truck-moving clr-red bg-clr-light card-icon p-3"
+            ></i>
+            <h2
+              class="h2 fs-5 clr-dark text-truncate"
+              style="margin-top: 1.7rem"
+            >
+              heading
+            </h2>
+          </div>
+        </a>
+        <a
+          href="#"
+          class="
+            cat-card
+            m-3
+            mt-4
+            border border-2
+            p-2
+            rounded
+            position-relative
+          "
+        >
+          <div class="text-center">
+            <i
+              class="fas fa-truck-moving clr-red bg-clr-light card-icon p-3"
+            ></i>
+            <h2
+              class="h2 fs-5 clr-dark text-truncate"
+              style="margin-top: 1.7rem"
+            >
+              heading
+            </h2>
+          </div>
+        </a>
+        <a
+          href="#"
+          class="
+            cat-card
+            m-3
+            mt-4
+            border border-2
+            p-2
+            rounded
+            position-relative
+          "
+        >
+          <div class="text-center">
+            <i
+              class="fas fa-truck-moving clr-red bg-clr-light card-icon p-3"
+            ></i>
+            <h2
+              class="h2 fs-5 clr-dark text-truncate"
+              style="margin-top: 1.7rem"
+            >
+              heading
+            </h2>
+          </div>
+        </a>
+      </div>
+      <div class="container add-full-section border border-dark"></div>
+      <div
+        class="d-flex justify-content-start align-content-center container mt-5"
+      >
+        <button
+          class="btn rounded-pill btn-sort bg-clr-red border border-2 me-4"
+          style="border-color: var(--ter-clr) !important"
+        >
+          Random Results
+        </button>
+        <button
+          class="btn rounded-pill btn-sort bg-light-gary border border-2 me-4"
+          style="border-color: var(--ter-clr) !important"
+        >
+          Newly Added
+        </button>
+        <button
+          class="btn rounded-pill btn-sort bg-light-gary border border-2 me-4"
+          style="border-color: var(--ter-clr) !important"
+        >
+          Most Ratings
+        </button>
+      </div>
+    </section>
+    <section class="pt-5 pb-5 border-botoom border-dark bg-clr-light pe-0 ps-0">
+        <div class="container d-flex justify-content-center align-items-center flex-wrap">
+            
+            <div class="card border border-dark rounded p-2 bg-clr-light">
+                <div class="video-card-wrapper p-1 pb-2 border-bottom border-dark">
+                    <iframe
+                    height="150"
+                    width="284"
+                    src="https://www.youtube.com/embed/HgvIox6ehkM?modestbranding=1&autoplay=1&mute=1&loop=1&controls=0&showinfo=0&fs=0&title=0"
+                    >
+                    </iframe>
+                </div>
+                <div class="content p-1">
+                    <div class="is-open text-success fs-para">
+                        <i class="d-inline me-1 fas fa-circle"></i>
+                        <p class="d-inline me-1 status">open</p>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mt-2 mb-2">
+                    <a href="./forms.html"><h1 class="h1 fs-4 clr-dark fw-bold card-heading">heading of card</h1></a>
+                    <div class="copy me-3">
+                        <input
+                        type="text"
+                        class="copy-link"
+                        id=""
+                        value="google.com"
+                        hidden
+                        />
+                        <a href="#" onclick="copylink()"
+                        ><i class="far fa-copy fs-4"></i
+                        ></a>
+                    </div>
+                </div>
+                <div class="mt-2 mb-2 fs-para">
+                    <div class="ratings d-inline bg-clr-red rounded" style="padding: 5px 10px; font-weight: 700;">5.0</div>
+                    <h5 class="mx-2 d-inline fs-para">8 Comments</h5>
+                </div>
+                <div class="fs-para mt-2 mb-2">
+                    Food, Gents, Clothing, Leadies Wear.
+                </div>
+                <div class="d-flex justify-content-between align-items-center mt-2 mb-2">
+                    <a href="tel:+91 1234567890" class="btn bg-clr-red rounded-pill me-4 ms-1" style="padding: 7px 20px; font-size: 13px; font-weight:600;">+91 1234567890</a>
+                    <div class="icons">
+                        <i class="fab fa-whatsapp fa-1x bg-clr-red"></i>
+                        <i class="fab fa-telegram-plane fa-1x bg-clr-red"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card border border-dark rounded p-2 bg-clr-light">
+                <div class="video-card-wrapper p-1 pb-2 border-bottom border-dark">
+                    <iframe
+                    height="150"
+                    width="284"
+                    src="https://www.youtube.com/embed/HgvIox6ehkM?modestbranding=1&autoplay=1&mute=1&loop=1&controls=0&showinfo=0&fs=0&title=0"
+                    >
+                    </iframe>
+                </div>
+                <div class="content p-1">
+                    <div class="is-open text-success fs-para">
+                        <i class="d-inline me-1 fas fa-circle"></i>
+                        <p class="d-inline me-1 status">open</p>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mt-2 mb-2">
+                    <a href="./forms.html"><h1 class="h1 fs-4 clr-dark fw-bold card-heading">heading of card</h1></a>
+                    <div class="copy me-3">
+                        <input
+                        type="text"
+                        class="copy-link"
+                        id=""
+                        value="google.com"
+                        hidden
+                        />
+                        <a href="#" onclick="copylink()"
+                        ><i class="far fa-copy fs-4"></i
+                        ></a>
+                    </div>
+                </div>
+                <div class="mt-2 mb-2 fs-para">
+                    <div class="ratings d-inline bg-clr-red rounded" style="padding: 5px 10px; font-weight: 700;">5.0</div>
+                    <h5 class="mx-2 d-inline fs-para">8 Comments</h5>
+                </div>
+                <div class="fs-para mt-2 mb-2">
+                    Food, Gents, Clothing, Leadies Wear.
+                </div>
+                <div class="d-flex justify-content-between align-items-center mt-2 mb-2">
+                    <a href="tel:+91 1234567890" class="btn bg-clr-red rounded-pill me-4 ms-1" style="padding: 7px 20px; font-size: 13px; font-weight:600;">+91 1234567890</a>
+                    <div class="icons">
+                        <i class="fab fa-whatsapp fa-1x bg-clr-red"></i>
+                        <i class="fab fa-telegram-plane fa-1x bg-clr-red"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card border border-dark rounded p-2 bg-clr-light">
+                <div class="video-card-wrapper p-1 pb-2 border-bottom border-dark">
+                    <iframe
+                    height="150"
+                    width="284"
+                    src="https://www.youtube.com/embed/HgvIox6ehkM?modestbranding=1&autoplay=1&mute=1&loop=1&controls=0&showinfo=0&fs=0&title=0"
+                    >
+                    </iframe>
+                </div>
+                <div class="content p-1">
+                    <div class="is-open text-success fs-para">
+                        <i class="d-inline me-1 fas fa-circle"></i>
+                        <p class="d-inline me-1 status">closed</p>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mt-2 mb-2">
+                    <a href="./forms.html"><h1 class="h1 fs-4 clr-dark fw-bold card-heading">heading of card</h1></a>
+                    <div class="copy me-3">
+                        <input
+                        type="text"
+                        class="copy-link"
+                        id=""
+                        value="google.com"
+                        hidden
+                        />
+                        <a href="#" onclick="copylink()"
+                        ><i class="far fa-copy fs-4"></i
+                        ></a>
+                    </div>
+                </div>
+                <div class="mt-2 mb-2 fs-para">
+                    <div class="ratings d-inline bg-clr-red rounded" style="padding: 5px 10px; font-weight: 700;">5.0</div>
+                    <h5 class="mx-2 d-inline fs-para">8 Comments</h5>
+                </div>
+                <div class="fs-para mt-2 mb-2">
+                    Food, Gents, Clothing, Leadies Wear.
+                </div>
+                <div class="d-flex justify-content-between align-items-center mt-2 mb-2">
+                    <a href="tel:+91 1234567890" class="btn bg-clr-red rounded-pill me-4 ms-1" style="padding: 7px 20px; font-size: 13px; font-weight:600;">+91 1234567890</a>
+                    <div class="icons">
+                        <i class="fab fa-whatsapp fa-1x bg-clr-red"></i>
+                        <i class="fab fa-telegram-plane fa-1x bg-clr-red"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card border border-dark rounded p-2 bg-clr-light">
+                <div class="video-card-wrapper p-1 pb-2 border-bottom border-dark">
+                    <iframe
+                    height="150"
+                    width="284"
+                    src="https://www.youtube.com/embed/HgvIox6ehkM?modestbranding=1&autoplay=1&mute=1&loop=1&controls=0&showinfo=0&fs=0&title=0"
+                    >
+                    </iframe>
+                </div>
+                <div class="content p-1">
+                    <div class="is-open text-success fs-para">
+                        <i class="d-inline me-1 fas fa-circle"></i>
+                        <p class="d-inline me-1 status">open</p>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mt-2 mb-2">
+                    <a href="./forms.html"><h1 class="h1 fs-4 clr-dark fw-bold card-heading">heading of card</h1></a>
+                    <div class="copy me-3">
+                        <input
+                        type="text"
+                        class="copy-link"
+                        id=""
+                        value="google.com"
+                        hidden
+                        />
+                        <a href="#" onclick="copylink()"
+                        ><i class="far fa-copy fs-4"></i
+                        ></a>
+                    </div>
+                </div>
+                <div class="mt-2 mb-2 fs-para">
+                    <div class="ratings d-inline bg-clr-red rounded" style="padding: 5px 10px; font-weight: 700;">5.0</div>
+                    <h5 class="mx-2 d-inline fs-para">8 Comments</h5>
+                </div>
+                <div class="fs-para mt-2 mb-2">
+                    Food, Gents, Clothing, Leadies Wear.
+                </div>
+                <div class="d-flex justify-content-between align-items-center mt-2 mb-2">
+                    <a href="tel:+91 1234567890" class="btn bg-clr-red rounded-pill me-4 ms-1" style="padding: 7px 20px; font-size: 13px; font-weight:600;">+91 1234567890</a>
+                    <div class="icons">
+                        <i class="fab fa-whatsapp fa-1x bg-clr-red"></i>
+                        <i class="fab fa-telegram-plane fa-1x bg-clr-red"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card border border-dark rounded p-2 bg-clr-light">
+                <div class="video-card-wrapper p-1 pb-2 border-bottom border-dark">
+                    <iframe
+                    height="150"
+                    width="284"
+                    src="https://www.youtube.com/embed/HgvIox6ehkM?modestbranding=1&autoplay=1&mute=1&loop=1&controls=0&showinfo=0&fs=0&title=0"
+                    >
+                    </iframe>
+                </div>
+                <div class="content p-1">
+                    <div class="is-open text-success fs-para">
+                        <i class="d-inline me-1 fas fa-circle"></i>
+                        <p class="d-inline me-1 status">open</p>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mt-2 mb-2">
+                    <a href="./forms.html"><h1 class="h1 fs-4 clr-dark fw-bold card-heading">heading of card</h1></a>
+                    <div class="copy me-3">
+                        <input
+                        type="text"
+                        class="copy-link"
+                        id=""
+                        value="google.com"
+                        hidden
+                        />
+                        <a href="#" onclick="copylink()"
+                        ><i class="far fa-copy fs-4"></i
+                        ></a>
+                    </div>
+                </div>
+                <div class="mt-2 mb-2 fs-para">
+                    <div class="ratings d-inline bg-clr-red rounded" style="padding: 5px 10px; font-weight: 700;">5.0</div>
+                    <h5 class="mx-2 d-inline fs-para">8 Comments</h5>
+                </div>
+                <div class="fs-para mt-2 mb-2">
+                    Food, Gents, Clothing, Leadies Wear.
+                </div>
+                <div class="d-flex justify-content-between align-items-center mt-2 mb-2">
+                    <a href="tel:+91 1234567890" class="btn bg-clr-red rounded-pill me-4 ms-1" style="padding: 7px 20px; font-size: 13px; font-weight:600;">+91 1234567890</a>
+                    <div class="icons">
+                        <i class="fab fa-whatsapp fa-1x bg-clr-red"></i>
+                        <i class="fab fa-telegram-plane fa-1x bg-clr-red"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card border border-dark rounded p-2 bg-clr-light">
+                <div class="video-card-wrapper p-1 pb-2 border-bottom border-dark">
+                    <iframe
+                    height="150"
+                    width="284"
+                    src="https://www.youtube.com/embed/HgvIox6ehkM?modestbranding=1&autoplay=1&mute=1&loop=1&controls=0&showinfo=0&fs=0&title=0"
+                    >
+                    </iframe>
+                </div>
+                <div class="content p-1">
+                    <div class="is-open text-success fs-para">
+                        <i class="d-inline me-1 fas fa-circle"></i>
+                        <p class="d-inline me-1 status">open</p>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mt-2 mb-2">
+                    <a href="./forms.html"><h1 class="h1 fs-4 clr-dark fw-bold card-heading">heading of card</h1></a>
+                    <div class="copy me-3">
+                        <input
+                        type="text"
+                        class="copy-link"
+                        id=""
+                        value="google.com"
+                        hidden
+                        />
+                        <a href="#" onclick="copylink()"
+                        ><i class="far fa-copy fs-4"></i
+                        ></a>
+                    </div>
+                </div>
+                <div class="mt-2 mb-2 fs-para">
+                    <div class="ratings d-inline bg-clr-red rounded" style="padding: 5px 10px; font-weight: 700;">5.0</div>
+                    <h5 class="mx-2 d-inline fs-para">8 Comments</h5>
+                </div>
+                <div class="fs-para mt-2 mb-2">
+                    Food, Gents, Clothing, Leadies Wear.
+                </div>
+                <div class="d-flex justify-content-between align-items-center mt-2 mb-2">
+                    <a href="tel:+91 1234567890" class="btn bg-clr-red rounded-pill me-4 ms-1" style="padding: 7px 20px; font-size: 13px; font-weight:600;">+91 1234567890</a>
+                    <div class="icons">
+                        <i class="fab fa-whatsapp fa-1x bg-clr-red"></i>
+                        <i class="fab fa-telegram-plane fa-1x bg-clr-red"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <footer class="footer bg-clr-dark clr-light p-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 social-wrapper">
+            <div class="img-div bg-clr-light rounded mx-auto">
+              <img src="./img/lets-video-logo.png" alt="" />
+            </div>
+            <h6 class="h6 fs- text-center mt-3 mb-2" style="font-weight: 400">
+              A venture of zack manegement Groups
+            </h6>
+            <div
+              class="
+                d-flex
+                justify-content-between
+                align-items-center
+                mx-auto
+                mt-4
+              "
+            >
+              <a href="#"
+                ><img
+                  src="https://img.icons8.com/color/480/000000/facebook.png"
+                  height="50"
+                  width="50"
+              /></a>
+              <a href="#"
+                ><img
+                  src="https://img.icons8.com/color/480/000000/whatsapp--v5.png"
+                  height="50"
+                  width="50"
+              /></a>
+              <a href="#"
+                ><img
+                  src="https://img.icons8.com/color/480/000000/youtube-play.png"
+                  height="50"
+                  width="50"
+              /></a>
+              <a href="#"
+                ><img
+                  src="https://img.icons8.com/fluency/480/000000/instagram-new.png"
+                  height="50"
+                  width="50"
+              /></a>
+              <a href="#"
+                ><img
+                  src="https://img.icons8.com/color/480/000000/pinterest--v1.png"
+                  height="50"
+                  width="50"
+              /></a>
+            </div>
+          </div>
+          <div class="d-flex justify-content-around col-lg-8">
+            <div class="col-md-4 p-2 d-flex flex-column footer-items">
+              <a href="#" class="clr-light fs-6 ms-5 mb-3">explore links</a>
+              <a href="#" class="clr-light fs-6 ms-5 mb-3">Home</a>
+              <a href="#" class="clr-light fs-6 ms-5 mb-3">About Us</a>
+              <a href="#" class="clr-light fs-6 ms-5 mb-3">Contact us</a>
+              <a href="#" class="clr-light fs-6 ms-5 mb-3">Sitemap</a>
+              <a href="#" class="clr-light fs-6 ms-5 mb-3">link to us</a>
+            </div>
+            <div class="col-md-4 p-2 d-flex flex-column footer-items">
+              <a href="#" class="clr-light fs-6 ms-5 mb-3">useful links</a>
+              <a href="#" class="clr-light fs-6 ms-5 mb-3">advertisment with us</a>
+              <a href="#" class="clr-light fs-6 ms-5 mb-3">privacy policy</a>
+              <a href="#" class="clr-light fs-6 ms-5 mb-3">terms and condition</a>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <h5 class="h5 fs-6 clr-light text-center" style="font-weight: 500">
+            &#169; 2021. All rights reserved by letsvideos.in
+          </h5>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      async function copylink() {
+        let text = document.querySelector(".copy-link").value;
+        await navigator.clipboard.writeText(text);
+        alert(
+          "Ad Link Is Copied Successfully! Now You Can Share With Others..."
+        );
+      }
+      $(window).on("click", function (e) {
+        if (
+          e.target.classList.contains("serach") ||
+          e.target.classList.contains("area")
+        ) {
+          $(".area").show();
+          $(".map").css("top", "26%");
+        } else {
+          $(".area").hide();
+          $(".map").css("top", "50%");
+        }
+      });
+      $(".status").each(function (index, element) {
+        if ($(element).text() === "open") {
+          $(element).parent().removeClass("text-danger").addClass("text-success");
+        } else if ($(element).text() === "closed") {
+          $(element).parent().removeClass("text-success").addClass("text-danger");
+        }
+      });
+    </script>
+  </body>
+</html>
