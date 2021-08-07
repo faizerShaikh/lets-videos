@@ -126,7 +126,7 @@ a:hover {
   width: 150px;
   height: 80px;
 }
-.card-icon {
+.cat-card div i {
   position: absolute;
   top: 0%;
   left: 50%;
@@ -280,6 +280,15 @@ a:hover {
 }
 .footer-items a:hover {
   color: #414141;
+}
+.btn-create-add:hover{
+  transform: scale(1.05);
+}
+.letsvideos-web:hover{
+  color: var(--sec-clr);
+}
+iframe{
+  width: 100% !important;
 }
 @media (max-width: 991px) {
   .form-icon {
