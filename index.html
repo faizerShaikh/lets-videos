@@ -69,10 +69,10 @@
       </div>
     </nav>
     <section class="bg-clr-light" style="padding: 10em 0 5em 0;">
-        <div class="container px-3 py-4 border border-dark rounded">
-            <h1 class="h1 fs-4 fw-bold mb-3">“Discover the Secrets of a Low-Priced Advertisement!”
+        <div class="container px-3 py-4">
+            <h1 class="h1 fs-1 fw-bold mb-3 text-center">“Discover the Secrets of a Low-Priced Advertisement!”
             </h1>
-            <h3 class="h3 fs-5 mb-4 ms-1">How a Small Business Owner promote their business video on all Social Media platform with very less money.</h3>
+            <h3 class="h3 fs-5 mb-4 ms-1 text-center">How a Small Business Owner promote their business video on all Social Media platform with very less money.</h3>
             <div class="display-flex">
                 <div class="video-wrapper" style="width: 55%;">
                     <iframe
@@ -576,28 +576,24 @@
       ></script>
   
       <script>
-        var seconds = 5;
-        var min = 0;
-        var hours = 1;
+        var newDate = new Date("Aug 9, 2021 12:00:00").getDate();
+        newDate += 2;
+        var countDownDate = new Date(`Aug ${newDate}, 2021 12:00:00`).getTime();
+
         setInterval(function() {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
             document.querySelector(".seconds").innerHTML = seconds;
-            document.querySelector(".min").innerHTML = min;
-            document.querySelector(".hour").innerHTML = hours;
-            seconds -= 1;
-            if(seconds === 0){
-                min -= 1;
-                seconds = 60;
+            document.querySelector(".min").innerHTML = minutes;
+            document.querySelector(".hour").innerHTML = hours % 12;           
+            if (hours === 0 && minutes === 0 && seconds === 0) {
+              newDate += 1;
+              countDownDate = new Date(`Aug ${newDate}, 2021 12:00:00`).getTime();
             }
-            if (min === -1) {
-                hours -= 1;
-                min = 60;
-            }
-            if (hours === -1) {
-                hours = 12;
-                min = 60;
-                seconds = 60
-            }
-            }, 1000);
+         }, 1000);
       </script>
     </body>
   </html>
