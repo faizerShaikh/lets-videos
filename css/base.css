@@ -333,6 +333,9 @@ a:hover {
 iframe {
   width: 100% !important;
 }
+.col-lg-7 iframe{
+  height: 300px;
+}
 @media (max-width: 991px) {
   .form-icon {
     left: 14%;
